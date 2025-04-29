@@ -1,0 +1,45 @@
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+
+}
+.top-nav{
+    display: flex;
+    background-color: goldenrod;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.img{
+    width: 6rem;
+}
+.top-nav ul{
+   display: flex;
+   
+    
+    
+}
+.top-nav ul li{
+    display: flex;
+    list-style: none;
+    padding: 0.5rem;
+    font-size: larger;
+
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+    padding: 5rem;
+}
+.container_text{
+    width: 20rem;
+    text-align: justify;
+}
+.container_img img{
+    width: 19rem;
+}

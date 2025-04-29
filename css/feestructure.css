@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+.logo-section nav{
+    margin: 2rem;
+}
+header {
+    background: linear-gradient(90deg, #0c2959, #0870c1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px -10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header img {
+    width: 10rem;
+    flex-shrink: 2;
+    
+}
+header h1 {
+    font-size: 1.8rem;
+    margin-left: 10px;
+    justify-content: center;
+    display: flex;
+    width: 36rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 192px;
+    align-items: end;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+   
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #C8E6C9;
+    background-color: #111;
+}
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f5f5dc; /* Milky white background for dropdown */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a {
+    color: black; /* Black text */
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.admission-header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #921704;
+    color: white;
+}
+
+.admission-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.admission-header p {
+    font-size: 1.2rem;
+}
+
+
+main {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 90%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1rem;
+}
+
+thead {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Dim white for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Bright white for even rows */
+}
+
+tbody tr:hover {
+    background-color: #d3d3d3; /* Highlight row on hover */
+}

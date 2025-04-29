@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Page</title>
+    <link rel="stylesheet" href="css/admission.css">
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="img/logo.png" alt="College Logo">
+            <h1>National College Of Science and Technology LundKhwar Mardan</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="admission.html">Admission</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="fee structure.html">Fee Structure</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="" alt="">
+
+
+    <section class="admission-header">
+        <h2>Apply Now</h2>
+        <p>Please enter the data correctly in the desired fields</p>
+    </section>
+
+    <section class="admission-form">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="fatherName">Father Name:</label>
+            <input type="text" id="fatherName" name="fatherName" placeholder="Enter your father's name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            <label for="course">Select Course</label>
+            <select name="course" id="course">
+                <option value="DIT" selected>DIT(Diploma In Information Technology)</option>
+                <option value="English Language">English Language</option>
+                <option value="Office Automation">Office Automation</option>
+                <option value="Python">Python</option>
+            </select>
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+
+            <label for="metricDMC">Metric DMC Image:</label>
+            <input type="file" id="metricDMC" name="metricDMC" accept="image/*" required>
+
+            <label for="domicile">Domicile Image:</label>
+            <input type="file" id="domicile" name="domicile" accept="image/*" required>
+
+            <label for="cnic">CNIC/Form B Image:</label>
+            <input type="file" id="cnic" name="cnic" accept="image/*" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        <p style="font-weight: bolder;">&copy;National college Of Science & Technology LundKhwar Mardan. All Rights Reserved | Developed By Zeeshan Hassan</p>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+}
+.logo-section nav{
+    margin: 2rem;
+}
+header {
+    background: linear-gradient(90deg, #0c2959, #0870c1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px -10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header img {
+    width: 10rem;
+    flex-shrink: 2;
+    
+}
+header h1 {
+    font-size: 1.8rem;
+    margin-left: 10px;
+    justify-content: center;
+    display: flex;
+    width: 36rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 192px;
+    align-items: end;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+   
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #C8E6C9;
+    background-color: #111;
+}
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f5f5dc; /* Milky white background for dropdown */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a {
+    color: black; /* Black text */
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.admission-header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #921704;
+    color: white;
+}
+
+.admission-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.admission-header p {
+    font-size: 1.2rem;
+}
+
+.admission-form {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.admission-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.admission-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea,
+.admission-form button {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.admission-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.admission-form button {
+    background: #0c2959;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.admission-form button:hover {
+    background: #0870c1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}

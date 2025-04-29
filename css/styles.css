@@ -1,0 +1,233 @@
+
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #0c2959, #0870c1);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 10px -10px 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+        
+        header img {
+            width: 10rem;
+            flex-shrink: 2;
+        }
+        
+        header h1 {
+            font-size: 1.8rem;
+            margin-left: 10px;
+            justify-content: center;
+            display: flex;
+            width: 36rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-bottom: 192px;
+            align-items: end;
+        }
+        
+        nav ul li {
+            position: relative; /* To position dropdown */
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            color: white;
+            background-color: #111; /* Dark background on hover */
+        }
+        
+        .dropdown-menu {
+            display: none; /* Hidden by default */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f5f5dc; /* Milky white background for dropdown */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            min-width: 150px;
+        }
+        
+        .dropdown-menu li {
+            margin: 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown-menu li a {
+            color: black; /* Black text */
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: left;
+            display: block;
+        }
+        
+        .dropdown-menu li a:hover {
+            background-color: #111;
+            color: white;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block; /* Show dropdown on hover */
+        }
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            background: #921704;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .hero-section img {
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .hero-section h2 {
+            font-size: 2rem;
+            color: #cba509;
+            padding: 1rem 2rem 2rem 2rem;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            padding: 2rem;
+            text-align: justify;
+            color: white;
+            word-spacing: 8px;
+            line-height: 34px;
+            font-family: sans-serif;
+            
+        }
+        .teaching-staff {
+            padding: 40px 20px;
+            text-align: center;
+            background: #ffffff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .teaching-staff h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+        .staff-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .staff-card {
+            text-align: center;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .staff-card img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .staff-card p {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .courses-section {
+            padding: 40px 20px;
+            text-align: center;
+            background: #e8f5e9;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+
+        }
+        .courses-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+        .courses-section img{
+            width: 10rem;
+            height: 14rem;
+        }
+        .courses-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-direction: row;
+            flex-grow: 7rem;
+            flex-basis: auto;
+        }
+        .course-card {
+            text-align: center;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            
+        }
+        .course-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .course-card h3 {
+            font-size: 1.2rem;
+            color: #000000;
+            margin-bottom: -20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin-bottom: 5px;
+        }
+        header nav{
+            display: flex;
+            align-items: start;
+        }
